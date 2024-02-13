@@ -1,0 +1,24 @@
+{
+  "name": "cs2803-final-project",
+  "version": "1.0.0",
+  "description": "final project for cs2803 ss22",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hzhuarry/CS2803-Final-Project.git"
+  },
+  "author": "Harry, Catherine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hzhuarry/CS2803-Final-Project/issues"
+  },
+  "homepage": "https://github.com/hzhuarry/CS2803-Final-Project#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3"
+  }
+}

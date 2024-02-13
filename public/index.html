@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link href="index.css" rel="stylesheet">
+        <script defer src="index.js"></script>
+    </head>
+
+    <body>
+      <h1>Bit Clothing Login</h1>
+      <div class = "container">
+        <div id = "login-container">
+
+          <!-- username and password form to sign in -->
+          <form method="post" action="/attempt_login">
+              <h2>Login</h2>
+              <div>
+                  <label for="username">Username</label>
+                  <input type="text" name="username" id="username" placeholder="JohnSmith1">
+              </div>
+              <!-- give some space between these two divs. keep in mind the password class, maybe do something with that? -->
+              <div class="password">
+                  <label for="password">Password</label>
+                  <input type="password" name="password", id="password" placeholder="password123">
+              </div>
+              <div>
+                  <input type="submit" value="Login" id="login">
+              </div>
+
+            <div>
+                <p><a href="registration.html">Register</a></p>
+                <p><a href="reset_password.html">Forgot Password?</a></p>
+            </div>
+
+            <p hidden id="message"></p>
+          </form>
+
+
+        </div>
+
+        <div id = "overlay-container">
+          <div id = "overlay">
+            <div id = "picture">
+              <h1>Welcome Back!!</h1>
+              <img src = "clothing-login.jpg" alt = "Clothing">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <footer>
+        <p>Brought to you by Harry Zhu and Catherine Trobradovic</p>
+      </footer>
+    </body>
+</html>

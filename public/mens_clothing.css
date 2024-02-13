@@ -1,0 +1,123 @@
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #eee;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+    color: #eee;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #eee;
+}
+
+.navbar.active {
+    background: #eee;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover, .navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+
+body {
+    min-height: 110vh;
+    background-color: #0cbaba;
+    background-image: linear-gradient(225deg, #0cbaba 0%, #380036 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0%;
+  line-height: 1.5em;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: black;
+}
+
+#caption, h1 {
+  margin: 0;
+  text-align: center;
+}
+
+#caption, #price_1, #price_2, #price_3 {
+  font-family: "Lucida Sans";
+  font-size: 24px;
+  padding: 10px 10px 0 10px;
+}
+
+#description_1, #description_2, #description_3, #code_1, #code_2, #code_3, #variants {
+  font-size: 0.9em;
+  padding: 0px 0px 10px 20px;
+  text-align: left;
+}
+
+.article {
+  perspective: 1000px;
+  display: inline-block;
+  margin: 3%;
+}
+
+.article:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.article, .front, .back {
+  width: 250px;
+  height: 250px;
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+#content {
+  text-align: center;
+}

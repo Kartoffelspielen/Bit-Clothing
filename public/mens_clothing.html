@@ -1,0 +1,111 @@
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bit Clothing - Men's</title>
+        <link href="mens_clothing.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <script src="mens_clothing.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.slim.min.js"></script>
+    </head>
+    <body>
+
+      <header class="header">
+          <nav class="navbar navbar-expand-lg fixed-top py-3">
+              <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold">Bit Clothing</a>
+                  <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+
+                  <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item"><a href="home.html" class="nav-link text-uppercase font-weight-bold">Home</a></li>
+                          <li class="nav-item"><a href="womens_clothing.html" class="nav-link text-uppercase font-weight-bold">Women's Clothing</a></li>
+                          <li class="nav-item active"><a href="mens_clothing.html" class="nav-link text-uppercase font-weight-bold">Men's Clothing</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </header>
+
+
+      <div class="container">
+          <div class="pt-5 text-white">
+              <header class="py-5 mt-5">
+                  <h1 class="display-4">Top Men's Clothing</h1>
+              </header>
+
+              <div id="content">
+                <p>Hover over items for details!!</p>
+
+                <div class="article">
+                  <div class="flipper">
+                    <div class="front">
+                      <img src = "mens_1.PNG">
+                      <p id = "caption">Tops</p>
+                    </div>
+                    <div class="back">
+                      <h1 id = "price_1"></h1>
+                      <p id = "description_1"></p>
+                      <ul id = "variants">
+                        <li>Variant Colors
+                          <ul id = "variants">
+                            <li>Taupe</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p id = "code_1"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class = "article">
+                  <div class = "flipper">
+                    <div class = "front">
+                      <img src = "mens_2.PNG">
+                      <p id = "caption">Shorts</p>
+                    </div>
+                    <div class = "back">
+                      <h1 id = "price_2"></h1>
+                      <p id = "description_2"></p>
+                      <ul id = "variants">
+                        <li>Variant Colors
+                          <ul id = "variants">
+                            <li>Light Denim</li>
+                            <li>Denim Washed</li>
+                            <li>Medium Denim</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p id = "code_2"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class = "article">
+                  <div class = "flipper">
+                    <div class = "front">
+                      <img src = "mens_3.PNG">
+                      <p id = "caption">Hoodies & Sweatshirts</p>
+                    </div>
+                    <div class = "back">
+                      <h1 id = "price_3"></h1>
+                      <p id = "description_3"></p>
+                      <ul id = "variants">
+                        <li>Variant Colors
+                          <ul id = "variants">
+                            <li>Taupe</li>
+                            <li>Mint</li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <p id = "code_3"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+
+    </body>
+</html>

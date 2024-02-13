@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link href="registration.css" rel="stylesheet">
+        <script defer src="registration.js"></script>
+    </head>
+
+    <body>
+      <h1>Bit Clothing Registration</h1>
+      <div class = "container">
+        <div id = "sign-up-container">
+
+          <form method="post" action="/register">
+              <h2>Sign Up</h2>
+              <div>
+                  <label for="email_addr">Email:</label>
+                  <input type="email" name="email_addr" id="email_addr" placeholder="johnsmith@gmail.com">
+              </div>
+              <div>
+                  <label for="username">Username:</label>
+                  <input type="text" name="username" id="username" placeholder="JohnSmith1">
+              </div>
+              <div>
+                  <label for="password">Password:</label>
+                  <input type="password" name="password" id="password" placeholder="password123">
+              </div>
+              <div>
+                  <label for="confirm_password">Confirm Password:</label>
+                  <input type="password" name="confirm_password" id="confirm_password" placeholder="password123">
+              </div>
+              <div>
+                  <label for="question">Choose your security question</label>
+                  <select name="question" id="security_questions" required>
+                    <option value="What is the name of your first pet?">What is the name of your first pet?</option>
+                    <option value="What is your mother's madien name?">What is your mother's madien name?</option>
+                    <option value="In what city were you born?">In what city were you born?</option>
+                    <option value="What was the make of your first car?">What was the make of your first car?</option>
+                    <option value="What was your favorite food as a child?">What was your favorite food as a child?</option>
+                    <option value="What high school did you attend?">What high school did you attend?</option>
+                  </select>
+              </div>
+              <div>
+                  <label for="question_answer">Answer:</label>
+                  <input type="text" name="question_answer" id="question_answer" placeholder = "Mittens">
+              </div>
+              <div>
+                <input type="submit" value="Register" id="register">
+              </div>
+
+              <p hidden id="message"></p>
+          </form>
+
+        </div>
+
+        <div id = "overlay-container">
+          <div id = "overlay">
+            <div id = "picture">
+              <h1>Welcome!!</h1>
+              <img src = "clothing-registration.jpg" alt = "Clothing">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <footer>
+        <p>Brought to you by Harry Zhu and Catherine Trobradovic</p>
+      </footer>
+    </body>
+</html>
